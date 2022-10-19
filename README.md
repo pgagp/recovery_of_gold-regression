@@ -5,7 +5,7 @@
 
 ### Технологический процесс
 
-![стадии процесса](https://github.com/pgagp/yandex_projects/blob/main/technological%20process.png)
+![стадии процесса](https://github.com/pgagp/recovery_of_gold-regression/blob/main/data/technological%20process.png)
 
 ## Описание данных
 - Rougher feed — исходное сырье
@@ -46,7 +46,7 @@
 ## Расчёт эффективности
 Необходимо смоделировать процесс восстановления золота из золотосодержащей руды.
 Эффективность обогащения рассчитывается по формуле:
-![формула](https://github.com/pgagp/yandex_projects/blob/main/recovery.png)
+![формула](https://github.com/pgagp/recovery_of_gold-regression/blob/main/data/recovery.png)
 где:
 - C — доля золота в концентрате после флотации/очистки;
 - F — доля золота в сырье/концентрате до флотации/очистки;
@@ -58,10 +58,10 @@
 Для решения задачи вводится новую метрика качества — sMAPE (англ. Symmetric Mean Absolute Percentage Error, «симметричное среднее абсолютное процентное отклонение»).
 Она выражается не в абсолютных величинах, а в относительных и одинаково учитывает масштаб и целевого признака, и предсказания.
 Метрика sMAPE вычисляется:
-![метрика](https://github.com/pgagp/yandex_projects/blob/main/smape.png)
+![метрика](https://github.com/pgagp/recovery_of_gold-regression/blob/main/data/smape.png)
 
 Нужно спрогнозировать сразу две величины:
 - эффективность обогащения чернового концентрата rougher.output.recovery;
 - эффективность обогащения финального концентрата final.output.recovery.
 Итоговая метрика складывается из двух величин:
-![итогметрика](https://github.com/pgagp/yandex_projects/blob/main/total%20smape.png)
+![итогметрика](https://github.com/pgagp/recovery_of_gold-regression/blob/main/data/total%20smape.png)
